@@ -29,25 +29,48 @@ LabAccess adalah aplikasi web yang dirancang untuk memudahkan pengelolaan dan pe
 
 ## Struktur Direktori
 
-root/
+labaccess/  (Nama folder root proyek)
 ├── assets/
-│ ├── css/
-│ │ ├── main.css
-│ │ ├── autentikasi.css
-│ │ └── layanan.css
-│ ├── js/
-│ │ ├── main.js
-│ │ ├── autentikasi.js
-│ │ ├── layanan.js
-│ │ └── status-peminjaman.js
-│ ├── img/
-│ └── vendor/
-│ └── ... (bootstrap, dll)
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── autentikasi.css
+│   │   └── layanan.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── autentikasi.js
+│   │   ├── layanan.js
+│   │   └── status-peminjaman.js
+│   ├── img/
+│   │    ├── favicon.png
+│   │    ├── apple-touch-icon.png
+│   │    ├── hero-img.png
+│   │    ├── logo.png
+│   │    ├── about.jpg
+│   │    ├── values-1.png
+│   │    ├── values-2.png
+│   │    ├── values-3.png
+│   │    ├── features.png
+│   │    ├── alt-features.png
+│   │    ├── lab-1.png
+│   │    ├── lab-2.png
+│   │    ├── lab-506.png
+│   │    ├── lab-508.png
+│   │    ├── blog/
+│   │    │     ├── blog-1.jpg
+│   │    │     ├── blog-2.jpg
+│   │    │     └── blog-3.jpg
+│   │    └── team/
+│   │         ├── team-1.jpg
+│   │         ├── team-2.jpg
+│   │         ├── team-3.jpg
+│   │         └── team-4.jpg
+│   └── vendor/
+│       └── ... (bootstrap, dll)
 ├── views/
-│ └── atk/
-│ ├── admin.html
-│ ├── login.html
-│ └── register.html
+│   └── atk/
+│        ├── admin.html
+│        ├── login.html
+│        └── register.html
 ├── index.html
 ├── about.html
 ├── layanan.html
@@ -55,4 +78,5 @@ root/
 ├── status-peminjaman.html
 ├── ambil-peminjaman.php
 ├── simpan-peminjaman.php
-└── update-status-peminjaman.php
+├── update-status-peminjaman.php
+└── README.md
