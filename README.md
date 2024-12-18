@@ -1,5 +1,10 @@
 # LabAccess - Sistem Peminjaman Laboratorium
 
+## Anggota Kelompok
+1. Afif Alfatih | 2023071005
+2. Syifa Nur Nabila | 2023071017
+3. Abdurrrahman Hakim Makarim | 2023071019
+
 LabAccess adalah aplikasi web yang dirancang untuk memudahkan pengelolaan dan peminjaman laboratorium di lingkungan pendidikan. Aplikasi ini menyediakan fitur untuk memonitor ketersediaan perangkat, memesan laboratorium, mengelola jadwal, dan mempermudah proses peminjaman secara online.
 
 ## Fitur Utama
@@ -26,10 +31,5 @@ LabAccess adalah aplikasi web yang dirancang untuk memudahkan pengelolaan dan pe
 *   **Backend:**
     *   PHP
     *   MySQL
-
-## Anggota Kelompok
-1. Afif Alfatih | 2023071005
-2. Syifa Nur Nabila | 2023071017
-3. Abdurrrahman Hakim Makarim | 2023071019
 
 
