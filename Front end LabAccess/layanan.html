@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>LabAccess - Layanan</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page layanan-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="../../assets/img/logo.png" alt="">
+                <h1 class="sitename">LabAccess</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home<br></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="informasi.html">Informasi</a></li>
+                     <li><a href="layanan.html" class="active">Layanan</a></li>
+                    <li><a href="status-peminjaman.html">Status Peminjaman</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+         <!-- Services Section -->
+        <section id="services" class="services section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Pengajuan Peminjaman</h2>
+                <p>Pilih ruangan atau fasilitas yang tersedia<br></p>
+            </div><!-- End Section Title -->
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                            <div id="calendar"></div>
+                             </div>
+                        </div>
+                   </div>
+                     <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pesan Sekarang</h5>
+                                 <p class="card-text">Pilih tanggal di kalender, lalu lakukan pemesanan. </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Ajukan Peminjaman
+                                </button>
+                           </div>
+                         </div>
+                        </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formulir Pengajuan Peminjaman Prasarana</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                      <!-- Form pengajuan -->
+                      <form>
+                          <div class="mb-3">
+                             <h5 class="fw-bold">Data Pengajuan Peminjaman</h5>
+                               <div class="row">
+                                   <div class="col-md-6">
+                                     <label for="prasarana" class="form-label">Prasarana</label>
+                                       <select class="form-select" id="prasarana" required>
+                                          <option value="lab506">Lab 506</option>
+                                          <option value="lab508">Lab 508</option>
+                                          <option value="both">Lab 506 & 508</option>
+                                        </select>
+                                 </div>
+                                  <div class="col-md-6">
+                                     <label for="jumlahPeserta" class="form-label">Jumlah Peserta</label>
+                                      <input type="number" class="form-control" id="jumlahPeserta" placeholder="Jumlah Peserta" required>
+                                  </div>
+                            </div>
+                            <div class="row mt-3">
+                             <div class="col-md-4">
+                                 <label for="tanggal" class="form-label">Tanggal</label>
+                                  <input type="text" class="form-control" id="tanggal" placeholder="dd/mm/yyyy" required>
+                            </div>
+                            <div class="col-md-4">
+                                 <label for="waktuMulai" class="form-label">Waktu Mulai</label>
+                                  <input type="time" class="form-control" id="waktuMulai" placeholder="hh:mm" required>
+                           </div>
+                            <div class="col-md-4">
+                                 <label for="waktuSelesai" class="form-label">Waktu Selesai</label>
+                                  <input type="time" class="form-control" id="waktuSelesai" placeholder="hh:mm" required>
+                             </div>
+                             <div class="mb-3 mt-3">
+                                     <label for="fasilitas" class="form-label">Fasilitas yang digunakan</label>
+                                     <select class="form-select" id="fasilitas" required>
+                                           <option value="ruangan">Ruangan saja</option>
+                                             <option value="alat">Alat untuk aktifitas kerja</option>
+                                    </select>
+                             </div>
+                            </div>
+                            <div class="mb-3">
+                               <label for="keterangan" class="form-label">Keterangan</label>
+                                  <textarea class="form-control" id="keterangan" rows="3" placeholder="Masukkan Keterangan" required></textarea>
+                            </div>
+                         </div>
+                           <div class="mb-3">
+                               <h5 class="fw-bold">Data Pengaju</h5>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="statusPengaju" class="form-label">Status Pengaju</label>
+                                           <select class="form-select" id="statusPengaju" required>
+                                               <option value="mahasiswa">Mahasiswa</option>
+                                              <option value="dosen">Dosen</option>
+                                              <option value="staff">Staff</option>
+                                             <option value="tendik">Tenaga Kependidikan</option>
+                                            </select>
+                                     </div>
+                                     <div class="col-md-6">
+                                       <label for="nikNim" class="form-label">NIK / NIM</label>
+                                           <input type="text" class="form-control" id="nikNim" placeholder="Masukkan NIK / NIM Anda"
+                                           required>
+                                    </div>
+                                 </div>
+                                    <div class="mb-3 mt-3">
+                                     <label for="noWhatsapp" class="form-label">No Whatsapp</label>
+                                      <input type="text" class="form-control" id="noWhatsapp" placeholder="Masukkan No Whatsapp Anda" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="penanggungJawab" class="form-label">Penanggung Jawab Kegiatan/Acara</label>
+                                         <input type="text" class="form-control" id="penanggungJawab" placeholder="Masukkan Nama Penanggung Jawab" required>
+                                     </div>
+                           </div>
+                        </form>
+                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Kirim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="https://e-office.upj.ac.id/assets/js/fullcalendar.min.js"></script>
+
+    <!-- Main JS File -->
+     <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/layanan.js"></script>
+
+</body>
+
+</html>
