@@ -26,33 +26,3 @@ LabAccess adalah aplikasi web yang dirancang untuk memudahkan pengelolaan dan pe
 *   **Backend:**
     *   PHP
     *   MySQL
-
-## Struktur Direktori
-
-root/
-├── assets/
-│ ├── css/
-│ │ ├── main.css
-│ │ ├── autentikasi.css
-│ │ └── layanan.css
-│ ├── js/
-│ │ ├── main.js
-│ │ ├── autentikasi.js
-│ │ ├── layanan.js
-│ │ └── status-peminjaman.js
-│ ├── img/
-│ └── vendor/
-│ └── ... (bootstrap, dll)
-├── views/
-│ └── atk/
-│ ├── admin.html
-│ ├── login.html
-│ └── register.html
-├── index.html
-├── about.html
-├── layanan.html
-├── informasi.html
-├── status-peminjaman.html
-├── ambil-peminjaman.php
-├── simpan-peminjaman.php
-└── update-status-peminjaman.php
