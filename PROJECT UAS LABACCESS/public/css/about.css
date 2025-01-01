@@ -1,0 +1,116 @@
+/* Project Card Container */
+.row {
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 80%; /* Adjusts to the column size */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    font-size: 1.8rem; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    padding: 15px;
+}
+
+.project-button {
+    font-size: 1rem; /* Larger button text */
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-button.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Popup Styles */
+.lab-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lab-popup.d-flex {
+    display: flex !important;
+}
+
+.popup-content {
+    max-width: 600px; /* Wider popup */
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-body h2 {
+    font-size: 2rem; /* Larger title in popup */
+    margin-bottom: 20px;
+}
+
+.popup-body p {
+    font-size: 1.3rem; /* Larger description in popup */
+    color: #444;
+    line-height: 1.6;
+}
